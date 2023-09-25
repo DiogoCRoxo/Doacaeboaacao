@@ -11,7 +11,6 @@ menuIcon.addEventListener("click", () => {
 	}
 });
 
-
 let toggleIcon = document.querySelector(".menuIcon");
 
 toggleIcon.addEventListener("click", () => {
@@ -20,4 +19,9 @@ toggleIcon.addEventListener("click", () => {
 	} else {
 		toggleIcon.className = "menuIcon";
 	}
+});
+
+const scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true,
 });
