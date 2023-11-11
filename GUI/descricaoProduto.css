@@ -18,9 +18,9 @@ img {
     display: flex;
     flex-direction: column;
 }
+
 /* Navbar*/
 #navbar {
-
     top: 0;
     left: 0;
     width: 100%;
@@ -31,7 +31,7 @@ img {
     padding: 30px;
     text-decoration: none;
     text-align: center;
-
+    flex-direction: row;
 }
 
 nav ul {
@@ -54,10 +54,10 @@ nav ul li {
 .logo {
     float: left;
     margin-left: 28px;
-width: 290px; height: 168px; left: 8px;
+    width: 290px;
+    height: 168px;
+    left: 8px;
 }
-
-
 
 #navbar li a {
     color: rgb(13, 26, 38);
@@ -71,7 +71,58 @@ width: 290px; height: 168px; left: 8px;
     text-decoration: none;
 }
 
-#wrapper{
+/* Product */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.produto {
+    border: 10px solid red;
+    margin: 0 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-produto {
     display: flex;
     flex-direction: row;
+    width: 100%;
+}
+
+.container-produto img {
+    height: 400px;
+    width: 600px;
+}
+
+.wrapper-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    border: 10px black solid;
+}
+
+.wrapper-img-produto {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: 10px black solid;
+}
+
+.contato ol {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.mensagem i {
+    margin-left: 20px;
+    align-items: center;
+    align-content: center;
 }
