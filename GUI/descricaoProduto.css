@@ -1,12 +1,18 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
-    font-family: Josefin Sans;
     font-size: 1.6rem;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 img {
@@ -78,8 +84,11 @@ nav ul li {
     flex-direction: column;
 }
 
+.titulo {
+    font-size: 18px;
+}
+
 .produto {
-    border: 10px solid red;
     margin: 0 40px 0 40px;
     display: flex;
     flex-direction: column;
@@ -102,7 +111,6 @@ nav ul li {
     width: 50%;
     align-items: center;
     align-content: center;
-    border: 10px black solid;
 }
 
 .wrapper-img-produto {
@@ -110,19 +118,24 @@ nav ul li {
     align-items: center;
     justify-content: center;
     align-content: center;
-    border: 10px black solid;
 }
 
 .contato ol {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-
-
 }
 
 .mensagem i {
     margin-left: 20px;
     align-items: center;
     align-content: center;
+}
+
+.descricao-produto{
+    font-size: 18px;
+}
+
+.nome , .cidade , .estado{
+    font-size: 20px;
 }
