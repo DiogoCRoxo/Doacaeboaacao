@@ -1,6 +1,11 @@
+html,
+body {
+    height: 100%;
+}
+
 html {
     box-sizing: border-box;
-    font-size: 16px;
+
     font-size: 1.6rem;
     height: 100%;
     width: 100%;
@@ -82,7 +87,7 @@ nav ul li {
 .wrapper {
     display: flex;
     flex-direction: column;
-        margin: 0 40px 0 40px;
+    margin: 0 40px 0 300px;
 }
 
 .titulo {
@@ -151,17 +156,20 @@ hr {
     margin: 20px 40px 0 40px;
 }
 
-.container-detalhes , .container-localizacao{
+.container-detalhes,
+.container-localizacao {
     margin: 0 40px 0 40px;
     display: flex;
     flex-direction: column;
 }
 
-.container-detalhes h5 , .container-localizacao h5 {
+.container-detalhes h5,
+.container-localizacao h5 {
     margin: 10px 0 10px 0;
 }
 
-.info-detalhes , .info-localizacao {
+.info-detalhes,
+.info-localizacao {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -169,19 +177,47 @@ hr {
     align-content: center;
 }
 
-.categoria-detalhes , .localizacao-detalhes {
+.categoria-detalhes,
+.localizacao-detalhes {
     margin: 10px;
 }
 
 
-.categoria-detalhes h6  , .localizacao-detalhes h6 {
+.categoria-detalhes h6,
+.localizacao-detalhes h6 {
     font-weight: 300;
     margin: 0 0 10px 0;
 }
 
-.categoria-detalhes p , .localizacao-detalhes p{
+.categoria-detalhes p,
+.localizacao-detalhes p {
     font-size: 13px;
     margin: 0;
     font-weight: 200;
 }
+
+/* Produtos de interesse */
+
+.produtos-de-interesse {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0 300;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.produtos-interesse {
+    display: flex;
+    flex-direction: row;
+}
+
+.produtos-interesse img {
+    width: 350px;
+    height: 350px;
+}
+
+.produto-box {
+    border: blue solid 5px;
+}
+
 
