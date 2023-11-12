@@ -82,6 +82,7 @@ nav ul li {
 .wrapper {
     display: flex;
     flex-direction: column;
+        margin: 0 40px 0 40px;
 }
 
 .titulo {
@@ -132,10 +133,55 @@ nav ul li {
     align-content: center;
 }
 
-.descricao-produto{
+.descricao-produto {
     font-size: 18px;
+    font-weight: 300;
 }
 
-.nome , .cidade , .estado{
+.nome,
+.cidade,
+.estado {
     font-size: 20px;
 }
+
+hr {
+    color: black;
+    size: 10px;
+    width: 80%;
+    margin: 20px 40px 0 40px;
+}
+
+.container-detalhes , .container-localizacao{
+    margin: 0 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-detalhes h5 , .container-localizacao h5 {
+    margin: 10px 0 10px 0;
+}
+
+.info-detalhes , .info-localizacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.categoria-detalhes , .localizacao-detalhes {
+    margin: 10px;
+}
+
+
+.categoria-detalhes h6  , .localizacao-detalhes h6 {
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.categoria-detalhes p , .localizacao-detalhes p{
+    font-size: 13px;
+    margin: 0;
+    font-weight: 200;
+}
+
