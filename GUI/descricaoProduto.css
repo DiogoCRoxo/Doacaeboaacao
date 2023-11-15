@@ -5,7 +5,6 @@ body {
 
 html {
     box-sizing: border-box;
-
     font-size: 1.6rem;
     height: 100%;
     width: 100%;
@@ -15,9 +14,10 @@ html {
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Slab', serif;
+}
+
+body a {
+    cursor: pointer;
 }
 
 img {
@@ -201,7 +201,7 @@ hr {
 .produtos-de-interesse {
     display: flex;
     flex-direction: column;
-    margin: 0 40px 0 300;
+    margin-top: 30px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -211,13 +211,77 @@ hr {
     flex-direction: row;
 }
 
+.interesse {
+    margin-top: 50px;
+}
+
 .produtos-interesse img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 80%;
 }
 
 .produto-box {
-    border: blue solid 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 20px 0 0;
+    box-shadow: 1px 1px 17px -3px rgba(59, 59, 59, 0.69);
+    -webkit-box-shadow: 1px 1px 17px -3px rgba(59, 59, 59, 0.69);
+    -moz-box-shadow: 1px 1px 17px -3px rgba(59, 59, 59, 0.69);
+}
+
+.produto-box p {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+.produto-box i {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px 10px 0 10px;
 }
 
 
+/* Footer */
+
+.wrapper-nos {
+    width: 92%;
+    background-color: #C15D6F;
+    border-radius: 5px;
+    color: white;
+    margin: 30px 0 0 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+}
+
+.sobre-nos {
+    width: 60%;
+}
+.sobre-nos h2, p{
+    padding-left: 10px;
+}
+
+.sociais {
+    width: 40%;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
