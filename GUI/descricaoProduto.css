@@ -109,14 +109,17 @@ nav ul li {
 .container-produto img {
     height: 400px;
     width: 600px;
+    cursor: pointer;
 }
 
 .wrapper-info {
     display: flex;
     flex-direction: column;
     width: 50%;
-    align-items: center;
     align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .wrapper-img-produto {
@@ -124,6 +127,17 @@ nav ul li {
     align-items: center;
     justify-content: center;
     align-content: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
 .contato ol {
@@ -136,6 +150,7 @@ nav ul li {
     margin-left: 20px;
     align-items: center;
     align-content: center;
+
 }
 
 .descricao-produto {
@@ -147,6 +162,7 @@ nav ul li {
 .cidade,
 .estado {
     font-size: 20px;
+    margin: 10px;
 }
 
 hr {
@@ -215,6 +231,17 @@ hr {
     margin-top: 50px;
 }
 
+.grow img {
+    transition: 1s ease;
+}
+
+.grow img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
 .produtos-interesse img {
     width: 300px;
     height: 80%;
@@ -225,6 +252,8 @@ hr {
     display: flex;
     flex-direction: column;
     height: 100%;
+    cursor: pointer;
+    width: 84%;
     margin: 0 20px 0 0;
     box-shadow: 1px 1px 17px -3px rgba(59, 59, 59, 0.69);
     -webkit-box-shadow: 1px 1px 17px -3px rgba(59, 59, 59, 0.69);
@@ -255,33 +284,81 @@ hr {
 
 /* Footer */
 
-.wrapper-nos {
-    width: 92%;
-    background-color: #C15D6F;
-    border-radius: 5px;
+.footer,
+.wrapper-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     color: white;
-    margin: 30px 0 0 30px;
-    padding: 10px;
+}
+
+.footer {
+    background-color: black;
+    margin: 40px 0 0 30px;
+    width: 85%;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.lista-links {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lista-links li {
+    text-decoration: none;
+    list-style: none;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cadastro-noticias {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-button {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+}
+
+.input-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 200;
-}
-
-.sobre-nos {
-    width: 60%;
-}
-.sobre-nos h2, p{
-    padding-left: 10px;
-}
-
-.sociais {
-    width: 40%;
-    display: flex;
-    align-content: space-around;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+
+#email {
+    height: 100%;
+    width: 280px;
+    border: none;
+}
+
+.button-cadastrar {
+height: 42px;
+    width: 205px;
+    border: none;
+    color: white;
+    background-color: #C15D6F;
+    font-family: Josefin Sans;
+    font-size: 20px;
 }
