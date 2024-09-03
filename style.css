@@ -1,0 +1,323 @@
+body {
+  margin: 0;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+header {
+    background-image: linear-gradient(#FFFFFF, #DBDBDB);
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 4px 4px 9px 0px black;
+}
+
+.sitelogo {
+    padding: 10px 0px 4px 0px;
+    margin: 0px 80px 0px 50px;
+}
+
+nav {
+    display: flex;
+}
+
+nav > a {
+    margin-top: 36px;
+    margin-left: 140px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+nav > a:hover {
+    color: #D8315B;
+}
+
+/* MENU DE NAVEGAÇÃO: BOTÃO ENTRAR */
+
+.entrar {
+    background-color: #4baabf;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    width: 110px;
+    height: 45px;
+    margin-left: 250px;
+    margin-top: 25px;
+}
+
+button > a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #D8315B;
+}
+
+/* CADASTRO */
+
+main {
+    background-image: url(imagens-do-site/colaboração.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 0px;
+}
+
+/* CADASTRO: MENU */
+
+.menucad {
+    background-image: linear-gradient(white ,#DBDBDB, #B8B8B8);
+    padding: 30px 60px 30px 60px;
+    width: 300px;
+    margin: 80px 0px 80px 0px;
+    text-align: center;
+    right: 100px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* CADASTRO: CAMPOS E BOTÃO CADASTRAR */
+
+#Nome, #email, #password, #password1, .signin {
+    display: block;
+    padding: 15px 0px 10px 12px;
+    margin: 30px auto;
+    width: 280px;
+    height: 30px;
+    border-radius: 40px 0px 50px 0px;
+    border-color: #FFFFFF;
+}
+
+/* BOTÃO CADASTRAR */
+
+.signin {
+    padding: 7px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    height: 45px;
+    width: 220px;
+    border-radius: 15px;
+    border-color: black;
+}
+
+/* JÁ SOU CADASTRADO */
+
+h3 > a:hover {
+    color: #D8315B;
+}
+
+/* FIM DA PÁGINA */
+
+footer {
+  margin-top: 0px;
+}
+
+/* SOBRE NÓS E REDES SOCIAS */
+
+.f1 {
+    background-color: #D8315B;
+    color: white;
+    padding: 10px 0px 40px 0px;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    box-shadow: 4px 4px 9px 0px black;
+}
+
+.sobrenos {
+  margin-right: 210px;
+  margin-left: 15px;
+  padding-bottom: 20px;
+}
+
+.redessociais {
+  margin-left: 50px;
+  padding: 0;
+}
+
+/* LINKS DAS REDES SOCIAIS */
+
+.rds {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rds ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 10px;
+  }
+  
+  .rds ul li{
+    width: 80px;
+    height: 65px;
+    background-color: #D8315B;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .2s;
+  }
+  
+  .rds ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .rds ul li span {
+    position: absolute;
+  }
+  
+  .rds ul li:hover {
+    width: 180px;
+  }
+  
+  .rds ul li .icon {
+    color: #ccc;
+    font-size: 2.2em;
+    transition: .2s;
+  }
+  
+  .rds ul li .text {
+    color: white;
+    font-size: 18px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+  }
+  
+  .rds ul li:hover .text {
+    transform: scale(1);
+  }
+  
+  .rds ul li:hover .icon {
+    transform: scale(0);
+  }
+  
+  .rds ul li::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+  }
+  
+  .rds ul li:hover::before {
+    opacity: 1;
+  }
+
+  /* LINKS FINAIS E COPYRIGHT */
+  
+  .f2 {
+    background-color: black;
+    display: flex;
+    height: 22vh;
+  }
+
+  /* LINKS FINAIS:
+     Políticas de Privacidade
+     Contatos
+     Parcerias Sociais 
+  */
+
+  .finalinks {
+    position: absolute;
+    left: -20px;
+  } 
+
+  .finalinks > li {
+    padding-bottom: 20px;
+  }
+
+  li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  li > a:hover {
+    color: #D8315B;
+  }
+
+ /* CADASTRAR E-MAIL */
+
+  .container {
+    margin-left: 30%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;
+    text-align: center;
+  }
+
+  .emailcad {
+    color: white;
+  }
+
+  #emailcadtxt {
+    color: white;
+  }
+
+ /* CADASTRAR E-MAIL: CAMPO */
+
+  .email-input {
+    padding: 27px 20px 23px 5px;
+    margin-right: -2px;
+    font-size: 16px;
+    border: 2px solid #4baabf;
+    border-right: none; /* Remove a borda direita para fundir com o botão */
+    border-radius: 5px 0 0 5px; /* Bordas arredondadas para a esquerda */
+    outline: none; /* Remove a borda azul ao focar */
+    width: 250px;
+    height: 0px;
+  }
+
+   /* CADASTRAR E-MAIL: BOTÃO */
+
+  .email-button {
+    padding: 10px 50px 10px 10px;
+    height: 53px;
+    margin-top: 5px;
+    margin-left: -2px;
+    font-size: 22px;
+    border: 2px solid #4baabf;
+    border-radius: 0 5px 5px 0; /* Bordas arredondadas para a direita */
+    background-color: #4baabf;
+    color: white;
+    cursor: pointer;
+    outline: none; /* Remove a borda azul ao focar */
+}
+
+.email-button:hover {
+    background-color: #D8315B;
+    border-color: #D8315B;
+}
+
+ /* CADASTRAR E-MAIL: TEXTO DENTRO DO CAMPO */
+
+.email-input::placeholder {
+    color: #999;
+}
+
+ /* COPYRIGHT */
+
+.copyright {
+  color: white;
+  position: absolute;
+  right: 10px;
+  margin-top: 40px;
+}
+
+.copyright > img {
+  margin-left: 120px;
+}
