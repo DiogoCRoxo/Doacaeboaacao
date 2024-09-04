@@ -54,7 +54,7 @@ button:hover {
     background-color: #D8315B;
 }
 
-/* CAMPOS */
+/* PERFIL E CAMPOS */
 
 .perfil {
   margin: 70px 0px 0px 100px;
@@ -93,6 +93,8 @@ h3 > input {
   padding: 10px 25px 5px 10px;
 }
 
+/* EU QUERO: */
+
 .idlike {
   margin-left: 100px;
   margin-bottom: 50px;
@@ -103,6 +105,8 @@ h3 > input {
   width: 15px;
   margin-right: 5px;
 }
+
+/* BOTÕES CANCELAR / SALVAR */
 
 .cancel-or-save > button {
   margin-right: 30px;
