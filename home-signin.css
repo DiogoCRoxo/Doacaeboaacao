@@ -22,7 +22,7 @@ nav {
 
 nav > a {
     margin-top: 36px;
-    margin-left: 140px;
+    margin-left: 170px;
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -30,28 +30,6 @@ nav > a {
 
 nav > a:hover {
     color: #D8315B;
-}
-
-/* MENU DE NAVEGAÇÃO: BOTÃO ENTRAR */
-
-.entrar {
-    background-color: #4baabf;
-    border-radius: 50px;
-    border: none;
-    font-size: 20px;
-    width: 110px;
-    height: 45px;
-    margin-left: 250px;
-    margin-top: 25px;
-}
-
-button > a {
-    text-decoration: none;
-    color: white;
-}
-
-button:hover {
-    background-color: #D8315B;
 }
 
 /* PERFIL E CAMPOS */
