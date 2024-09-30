@@ -32,17 +32,16 @@ nav > a:hover {
     color: #D8315B;
 }
 
-/* PERFIL E CAMPOS */
-
-.perfil {
-  margin: 70px 0px 0px 100px;
-}
+/* PERFIL */
 
 .perfil-circular {
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   overflow: hidden;
+  position: absolute;
+  right: 35px;
+  margin-top: 10px;
 }
 
 .perfil-circular img {
@@ -51,53 +50,230 @@ nav > a:hover {
   object-fit: cover;
 }
 
-.campos {
+/* DOAÇÕES: CATÁLOGO */
+
+#s1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ #s1 > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin-top: 45px;
+ }
+
+ .donation {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+ }
+
+ .clothes, .books, .electronics, .food, .others {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+ }
+
+.d1, .info {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.info {
+  left: 100%;
+  transition: left 1s;
+  border-radius: 100%;
+}
+
+.clothes:hover .info {
+  left: 0%;
+}
+
+/* */
+
+.d2, .info2 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.info2 {
+  left: 100%;
+  transition: left 1s;
+  border-radius: 100%;
+}
+
+.books:hover .info2 {
+  left: 0%;
+}
+
+/* */
+
+.d3, .info3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.info3 {
+  left: 100%;
+  transition: left 1s;
+  border-radius: 100%;
+}
+
+.electronics:hover .info3 {
+  left: 0%;
+}
+
+/* */
+
+.d4, .info4 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.info4 {
+  left: 100%;
+  transition: left 1s;
+  border-radius: 100%;
+}
+
+.food:hover .info4 {
+  left: 0%;
+}
+
+/* */
+
+.d5, .info5 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.info5 {
+  left: 100%;
+  transition: left 1s;
+  border-radius: 100%;
+}
+
+.others:hover .info5 {
+  left: 0%;
+}
+
+/* RECOMENDADOS - MAIS PROCURADOS */
+
+#s2, #s3 {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#s2 > h1, #s3 > h1 {
+  font-size: 25px;
+  margin-left: 120px;
+}
+
+.recomendados1, .recomendados2, .recomendados3, .procurados1, .procurados2, .procurados3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  margin: 0px 640px 200px 120px;
+ }
+
+ .r1, .r2, .r3, .r4, .p1, .p2, .p3, .p4 {
+  width: 260px;
+  height: 260px;
+  position: relative;
+ }
+
+ .r1 > p, .r2 > p, .r3 > p, .r4 > p, .p1 > p, .p2 > p, .p3 > p, .p4 > p {
+  margin-top: 280px;
+ }
+
+ .dr1, .dr2, .dr3, .dr4,  .mp1, .mp2, .mp3, .mp4 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.carrossel, .carrossel2 {
+  width: 400%;
+  height: auto;
   display: flex;
 }
 
-.campos1, .campos2 {
+.carrossel > input, .carrossel2 > input {
+  display: none;
+}
+
+.recomendados2, .recomendados3, .procurados2, .procurados3 {
+  width: 25%;
+  height: auto;
+  position: relative;
+  transition: 1s;
+}
+
+.nav-manual, .nav-auto, .nav-manual2, .nav-auto2 {
+  position: absolute;
+  width: 100%;
+  margin-top: 25%;
   display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
+  justify-content: center;
+  margin-bottom: 0px;
 }
 
-h3 > input {
-  height: 25px;
-  width: 250px;
-  margin: 15px 15px 15px 0px;
-  border-radius: 40px 0px 50px 0px;
-  padding: 10px 25px 5px 10px;
+.nav-manual .manual-btn, .nav-auto div, .nav-manual2 .manual-btn2, .nav-auto2 div {
+  border: 1px solid #4baabf;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-/* EU QUERO: */
-
-.idlike {
-  margin-left: 100px;
-  margin-bottom: 50px;
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child), .nav-manual2 .manual-btn2:not(:last-child), .nav-auto2 div:not(:last-child) {
+  margin-right: 10px;
 }
 
-#opcao1, #opcao2, #opcao3, #opcao4 {
-  height: 15px;
-  width: 15px;
-  margin-right: 5px;
-}
-
-/* BOTÕES CANCELAR / SALVAR */
-
-.cancel-or-save > button {
-  margin-right: 30px;
-  margin-top: 30px;
-  height: 35px;
-  width: 100px;
+.nav-manual .manual-btn:hover, .nav-manual2 .manual-btn2:hover {
   background-color: #4baabf;
-  color: white;
-  border-color: #4baabf;
 }
 
-.cancel-or-save > button:hover {
-  background-color: #D8315B;
+#radio1:checked ~ .nav-auto .btn1, #radio2:checked ~ .nav-auto .btn2, #radio3:checked ~ .nav-auto .btn3, #radio2-1:checked ~ .nav-auto2 .btn2-1, #radio2-2:checked ~ .nav-auto2 .btn2-2, #radio2-3:checked ~ .nav-auto2 .btn2-3 {
+  background-color: #4baabf;
+}
+
+#radio1:checked ~ .recomendados1, #radio2-1:checked ~ .procurados1 {
+  margin-left: 2%;
+}
+
+#radio2:checked ~ .recomendados1, #radio2-2:checked ~ .procurados1 {
+  margin-left: -112.6%;
+}
+
+#radio3:checked ~ .recomendados1, #radio2-3:checked ~ .procurados1 {
+  margin-left: -150.1%;
 }
 
 /* FIM DA PÁGINA */
